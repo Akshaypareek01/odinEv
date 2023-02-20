@@ -22,3 +22,5 @@ app.listen(8080, () => {
     }
   })
   
+
+  // http://localhost:8080/api/user/signup  post req
