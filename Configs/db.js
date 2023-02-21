@@ -2,8 +2,8 @@ import mongoose from 'mongoose'
 
 export const connection = async () => {
   try {
-    // Enter your localhost mongodb url with database name
-    const url=" ";
+    mongoose.set('strictQuery', false);
+    const url="mongodb://127.0.0.1:27017/odinev";
     mongoose.connect(
       url,
       {

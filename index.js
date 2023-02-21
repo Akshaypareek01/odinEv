@@ -16,11 +16,13 @@ app.use("/api/user",userRouter);
 app.listen(8080, () => {
     try {
       console.log("Listening on Port 8080.....")
-        // connection()
+        connection()
     } catch (e) {
       console.log(e)
     }
   })
   
-
-  // http://localhost:8080/api/user/signup  post req
+// post req signup {name:"",email:" ",password:" "}
+  // http://localhost:8080/api/user/signup  
+// post req signup {email:" ",password:" "}
+  // http://localhost:8080/api/user/login   
